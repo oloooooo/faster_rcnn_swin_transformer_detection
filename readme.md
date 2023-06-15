@@ -1,5 +1,5 @@
-#这是一个简单的Faster rcnn主干网络替换为swin-transformer类的目标检测项目
-##环境搭建过程如下
+# 这是一个简单的Faster rcnn主干网络替换为swin-transformer类的目标检测项目
+##  环境搭建过程如下
     pip install torch==2.0.0+cu117 torchvision==0.15.1+cu117 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu117
     pip install pycocotools 
     pip install lxml
@@ -60,9 +60,8 @@
     xlrd                2.0.1
     zipp                3.15.0
 
-##训练过程如下
+## 训练过程如下
 请修改train.py下的这块代码已训练自己的VOC格式的数据集
-`
 
     VOC_root = "dataset/"
     batch_size = 1
@@ -72,13 +71,15 @@
 最后修改pascal_voc_classes.json下直接的类别即可，注意你的下标必须从1开始。这也以为着在train.py的下列的numclass必须是你的类别数加1
 最后你可以运行代码进行训练了。
 
-##测试
+## 测试
     label_json_path = './pascal_voc_classes.json'
     # load image
     original_img = Image.open("crazing_1.jpg")
 
 是需要修改的部分。
-###部署过程请自己看程序
-#最后请注意
+### 部署过程请自己看程序
+# 最后请注意
     请不要用torchvision的BackboneWithFPN因为torchvision的适用于图像分类的，我对其进行了部分修改
-
+# 代码参考：
+https://github.com/WZMIAOMIAO/deep-learning-for-image-processing  
+https://github.com/pytorch/vision
