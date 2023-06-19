@@ -79,9 +79,8 @@
 是需要修改的部分。
 ### 部署过程请自己看程序
 # 最后请注意
-    请不要用torchvision的BackboneWithFPN因为torchvision的swintransformer通道对不上适用于图像分类的，我对其进行了部分修改
+    请不要用torchvision的BackboneWithFPN因为torchvision的swintransformer通道对不上，而且其只适用于图像分类的，我对其进行了部分修改。
 # 代码参考：
 https://github.com/WZMIAOMIAO/deep-learning-for-image-processing  
 https://github.com/pytorch/vision
 如果有什么问题可以联系luoxin982@qq.com
-make by 罗鑫
